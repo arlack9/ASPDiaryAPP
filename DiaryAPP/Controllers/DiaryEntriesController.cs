@@ -28,7 +28,7 @@ namespace DiaryAPP.Controllers
         {
             //List<DiaryEntry> objDiaryEntryList = _db.DiasryEntries.ToList();
 
-            _db.DiaryEntries.Add(obj); //Add new diaey entry to database
+            _db.DiaryEntries.Add(obj); //Add new diary entry to database
             _db.SaveChanges(); //saves change to db.
             return RedirectToAction("Index");
         }
